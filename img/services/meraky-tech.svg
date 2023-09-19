@@ -1,0 +1,28 @@
+<svg id="Groupe_17" data-name="Groupe 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="192.963" height="56.318" viewBox="0 0 192.963 56.318">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_28" data-name="Rectangle 28" width="192.963" height="56.318" fill="#ffe0e0"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Tracé_30" data-name="Tracé 30" d="M858.925,236.417l2.2,3.816,2.2,3.816h-8.814l2.2-3.816Z" transform="translate(-854.518 -236.417)" fill="#ffe0e0"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_12" data-name="Groupe 12">
+    <g id="Groupe_11" data-name="Groupe 11" clip-path="url(#clip-path)">
+      <text id="tech" transform="translate(75.673 51.692)" fill="#ffe0e0" font-size="12" font-family="ZeniqTech, Zeniq Tech"><tspan x="0" y="0" letter-spacing="0.1em">tec</tspan><tspan y="0">h</tspan></text>
+      <text id="Meraky" transform="translate(0 36.341)" fill="#ffe0e0" font-size="42" font-family="ZeniqTech, Zeniq Tech"><tspan x="0" y="0">Mera</tspan><tspan y="0" letter-spacing="-0.032em">k</tspan><tspan y="0">y</tspan></text>
+    </g>
+  </g>
+  <g id="Groupe_14" data-name="Groupe 14" transform="translate(109.199 30.212)">
+    <g id="Groupe_13" data-name="Groupe 13" clip-path="url(#clip-path-2)">
+      <rect id="Rectangle_29" data-name="Rectangle 29" width="8.814" height="7.633" fill="#ffe0e0"/>
+    </g>
+  </g>
+  <g id="Groupe_16" data-name="Groupe 16">
+    <g id="Groupe_15" data-name="Groupe 15" clip-path="url(#clip-path)">
+      <text id="tech-2" data-name="tech" transform="translate(75.673 51.692)" fill="#ffe0e0" font-size="12" font-family="ZeniqTech, Zeniq Tech"><tspan x="0" y="0" letter-spacing="0.1em">tec</tspan><tspan y="0">h</tspan></text>
+      <text id="Meraky-2" data-name="Meraky" transform="translate(0 36.341)" fill="#ffe0e0" font-size="42" font-family="ZeniqTech, Zeniq Tech"><tspan x="0" y="0">Mera</tspan><tspan y="0" letter-spacing="-0.032em">k</tspan><tspan y="0">y</tspan></text>
+    </g>
+  </g>
+  <path id="Tracé_31" data-name="Tracé 31" d="M858.925,236.417l2.2,3.816,2.2,3.816h-8.814l2.2-3.816Z" transform="translate(-745.32 -206.206)" fill="#ffe0e0"/>
+</svg>

@@ -1,0 +1,1313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700&display=swap');
+html{
+    scroll-behavior:var(--color-gris);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'poppins', sans-serif;
+    font-size: 15px;
+}
+
+:root{
+    --color-gris: #EBEBEB;
+    --color-black: #000000;
+    --color-white:#FFFFFF;
+    --color-red:#E52109;
+
+}
+
+.tc-red{
+    color: var(--color-red);
+}
+
+.bg-red{
+    background-color:var(--color-red);
+}
+.bg-gris{
+    background-color:var(--color-gris);
+}
+.bgd-dark{
+    background-color: var(--color-black)
+}
+.partner{
+    background-color: var(--color-gris);
+}
+.partner-logo{
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 50px 0;
+}
+
+.partner-logo a img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+/*Propriété générale du site
+===================================== */
+.top-down{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: var(--color-black);
+    color: var(--color-white);
+    right: 50px;
+    bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+    
+}   
+
+.top-down:hover{
+    background-color: rgba(21, 21, 21, 0.3);
+    backdrop-filter:blur(20px);
+    bottom: 30px;
+}
+
+.btn{
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+/*Les bouton de fond rouge et de text blanc*/
+.btn-red{
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.btn-red:hover{
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+/*Les bouton de fond noir et de text blanc*/
+.btn-black{
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid var(--color-black);
+}
+
+.btn-black:hover{
+    border: 1px solid var(--color-black);
+}
+
+/*bouton inscription*/
+.btn-inscription{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 12px;
+}
+
+.btn-inscription:hover{
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+/*bouton connexion*/
+.btn-connexion{
+    background-color: var(--color-white);
+    color: var(--color-red);
+    border: 1px solid #E52109;
+    font-size: 12px;
+}
+
+.btn-connexion:hover{
+    color: var(--color-white);
+}
+ 
+.btn-inscription::before,
+.btn-red::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--color-red);
+    background-color: var(--color-white);
+    z-index: -2;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.btn-black::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: .5s;
+    z-index: -1;
+}
+
+.btn-connexion::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    z-index: -2;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.btn:hover::before,
+.btn-black:hover::before,
+.btn-connexion:hover::before{
+    width: 100%;
+}
+
+/*S'applique aux texts gras en rouge se trouvant sur les pages*/
+.text-rouge{
+    color: var(--color-red);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+/*S'applique aux texts gras en noir se trouvant sur les pages*/
+.text-black{
+    color: var(--color-black);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/*Permet de centrer le text de tout le site*/
+.contenu-text{
+    padding: 10px 90px;
+    margin: 20px;  
+}
+.contenu-text1{
+    padding: 40px 5% 0px 10%;
+}
+
+@media (max-width:760px) {
+    .contenu-text{
+        padding: 10px 30px 20px 10px;
+    }
+    .contenu-text1{
+        padding: 40px 5% 0px 10%;
+    }
+}
+@media (min-width:2000px) {
+    .contenu-text, .contenu-text1{
+        padding: 2% 20% 0 20%;
+    }
+}
+
+/*S'applique aux text de fond rouge se trouvant sur les images des pages services et contacts*/
+.image-text{
+    position: absolute;
+    margin: 20% 30%;
+    padding: 15px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: rgba(255, 0, 0, 0.363);
+    text-align: center;
+    font-weight: bolder;
+    width: 31%;
+}
+
+.text-top{
+    margin-top: 20%;
+}
+
+/*Page accueil de notre site
+===================================== */
+
+/*Menu de notre site*/
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:0% 6%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color:var(--color-white);
+    backdrop-filter: blur(50px);
+
+}
+
+/* Effet de transparence au déroulement du menu */
+nav.sticky{
+    background-color: rgba(254, 254, 254, .8);
+}
+
+/* Logo_meraship de notre menu */
+nav .logo{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1.5rem 1rem;
+}
+
+@media (min-width: 2000px) {
+    .nav-links ul li {
+        padding: 2rem 3rem;
+    }
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px; 
+}
+
+.nav-links ul li a::after, 
+.nav-links ul li a.active::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--color-red);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li a.active::after, 
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+/*S'applique aux icones du responsive du menu*/
+
+#check{
+    display: none;
+}
+.icons, #check{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15%;
+    top: 15px;
+}
+
+
+/*Responsivité du menu déroulant
+===================================== */
+
+/*Responsivité du menu déroulant*/
+
+@media (max-width:1170px) {
+
+    .icons{
+        display: inline-block;
+    }
+    
+    #check:checked~.icons #menu-icon,.icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: inline-block;
+    }
+
+    .nav-links{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.99);
+        backdrop-filter: blur(50px);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        line-height: 0px;
+        text-align: center;
+        transition: .5s ease;        
+    }
+
+    .nav-links ul{
+        padding: 25px;
+    }
+
+    #check:checked~.nav-links{
+        height: 20em;
+        z-index: 100;
+    }
+
+    nav img{
+        margin-top: 20px;
+    }
+   
+    .nav-links ul li {
+        display: block;
+        padding: 1rem 1rem;
+        margin-bottom: 5px;
+        line-height: 1px;
+    }
+
+    /* .nav-links ul li a{
+        color: var(--color-white);
+    } */
+
+    .nav-links ul li a::after, 
+    .nav-links ul li a.active::after{
+       display: none;
+    }
+
+    .nav-links ul li a.active{
+        color: var(--color-red);
+       
+    }    
+}
+
+@media all and (min-width: 800) and (max-width: 1300) {
+    .nav-links ul li button{
+        display: block;
+        margin-left: 100px;
+        margin-top: 16px;
+        width: 150px;
+    }
+}
+
+/******* Slide d'image ******/
+/*Pour les elements de text*/
+.carousel-caption{
+    bottom: 60px;
+    text-align: left;
+    width: 50%;
+}
+
+.carousel-caption h1{
+
+   font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 75px;
+    margin-top: 25px;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 4px 10px;
+}
+
+.carousel-caption p{
+    width: 70%;
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.carousel-caption a{
+    background-color: red;
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+@media (min-width:2300px) {
+   
+    .carousel-caption{
+        display: block;
+    }
+}
+
+@media (min-width:1500px) {
+   
+    .carousel-caption{
+        width: 60%;
+        top: 25%;
+    }
+}
+
+/* @media (max-width:1220px) {
+   
+    .carousel-caption{
+        width: 60%;
+    }
+} */
+
+@media (max-width:1094px ) {
+    .carousel-caption h1{
+       font-size: 40px;
+       line-height: 50px;
+   }
+}
+
+
+@media (max-width:938px ) {
+     .carousel-caption h1{
+        position: absolute;
+        bottom: 160px;
+        max-width: 150%;
+        letter-spacing: 3px;
+        font-size: 30px;
+        line-height:3rem;
+    }
+}
+
+/* @media (max-width:830px) {
+    .carousel-caption{
+        margin-top: 50%;
+        width: 70%;
+    }
+} */
+
+@media (max-width:800px) {
+    
+    .carousel-caption {
+        margin-top: 10%;
+        width: 70%;
+    }
+
+    .carousel-caption h1{
+        bottom: 110px;
+        line-height: 1.5em;
+    }
+
+    .carousel-caption p{
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:700px) {
+
+    .carousel-caption {
+        margin-top: 10%;
+        width: 70%;
+    }
+
+    .carousel-caption h1{
+        font-size: 22px;
+        bottom: 60px;
+        line-height: 1.5em;
+    }
+
+    .carousel-caption p{
+        margin-top: 200px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .carousel-caption a{
+        position: absolute;
+        top: 100%;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .carousel-caption {
+        width: 70%;
+        margin-top:10% ;
+    }
+    .carousel-caption h1{
+        bottom: 0px;
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+
+    .carousel-caption a{
+        position: absolute;
+        top: 100%;
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .carousel-caption p{
+        visibility: hidden;
+    }
+}
+
+@media (max-width:382px) {
+    .carousel-caption h1{
+        bottom: 0px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
+
+.carousel-indicators .nav-btn{
+    width: 20px;
+    height: 0px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+    transform: scale(0.6);
+    opacity: 1;
+}
+
+.carousel-indicators .nav-btn.active{
+    background-color: red;
+}
+
+.carousel-indicators .nav-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.carousel-indicators .nav-btn:hover{
+    transform: scale(.8);
+}
+
+.home-image{
+    margin-top: 75px;
+}
+
+/* Image tracé gauche sur le contenu apres le slide */
+.after-slide{
+    background-image: url("../img/accueil/trace-gauche.png");
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+
+/* Image tracé droit sur le contenu apres le slide */
+.after-slide-row{
+    background-image: url("../img/accueil/trace-droit.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 98%;
+    background-position-y: 100%;
+}
+
+/* Image du soleil sur le contenu apres le slide */
+.after-slide-content{
+    background-image: url("../img/accueil/soleil.png");
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position-x: 98%;
+}
+
+.after-slide-text{
+    border-left: 3px solid var(--color-red);
+
+}
+.after-slide-text .border-left{
+    padding-left: 10px;
+    color: var(--color-white);
+}
+
+/* .after-slide-text::before{
+    content:'';
+    position: absolute;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: var(--color-red);
+    border-radius: 50px;
+    flex-wrap: wrap;
+} */
+
+/*S'applique aux icones se au bas des slides d'images ; sur le fond noir*/
+.accueil-icone{
+    font-size: 28px;
+    color: var(--color-red);
+    margin-left: 50px;
+} 
+
+/* image de fond */
+.image-fond{
+    background-image: url('../img/accueil/fond-img.png');
+    background-size: cover;
+}
+/*----Section pourquoi choisir Méraship----*/
+
+.list-choix{
+    position: relative;
+    left: 40px;
+}
+
+@media (max-width:760px) {
+    .list-choix{
+        left: 0px;
+    }  
+}
+
+.all-content{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    color: var(--color-white);
+}
+
+.all-content .content-left{
+    background-color: var(--color-red);
+    padding: 30px 20px 21% 20px;
+    text-decoration: underline;
+    border-radius: 4px;
+    max-height: 150px;
+}
+
+@media (min-width:560px) and (max-width:992px){
+    .all-content .content-left{
+        padding-bottom: 8%;
+    }
+}
+
+@media (min-width:1402px){
+    .all-content .content-left{
+        padding-bottom: 40px;
+    }
+
+}
+
+.all-content .content-right{
+    background-color: var(--color-black);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.content-right span, .content-right p{
+    font-size: 16px;
+}
+
+.content-right span{
+    font-weight: 600;
+}
+
+.img-content img, .vidéo-content img{
+    object-fit: fill;
+    width: 100%;
+}
+
+@media (min-width:3000px) {
+    .img-content img, .vidéo-content img{
+        max-width: 50%;
+    }
+}
+
+@media (max-width:990px) {
+    .img-content, .vidéo-content{
+        visibility: hidden;
+        position: absolute;
+        right: 20px;
+    }
+}
+/*----Section comment ça marche----*/
+
+.list-style li, .list-style li p{
+    list-style-type: square;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-red);
+    margin: 15px 0;
+
+}
+
+.list-style li{
+    color: var(--color-black); 
+}
+.list-style li p::after{
+    content: '';
+    width: 12%;
+    height: 3px;
+    background-color: var(--color-red);
+    display: block;
+    margin: 0;
+}
+
+.list-style p{
+    font-size: 16px;
+}
+
+
+/* .partner{
+    display: flex;
+}
+
+.partner .partner-logo{
+    display: flex;
+    object-fit: fill;
+} */
+
+
+
+
+@media screen and (max-width:760px) {
+    .partner-logo img{
+        width: 100%;
+    }
+}
+
+
+/* section ce qu'ils disent de nous */
+.swipe-home{
+    width: 100%;
+}
+
+.swiper-wrapper-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-home{
+    width: 20em;
+    height: 95%;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 1rem 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1em;
+    z-index: 1;
+    border-radius: 5px;
+    color: white;
+}
+
+.card-content-home .avis-client{
+    margin: 1.2em;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.card-icon  img{
+    position: relative;
+    right: 100px;
+    font-size: 40px;
+    color: var(--color-red);
+    transform: translate(100px, 50px);
+    opacity: .8;
+    z-index: 0;
+}
+
+ /* .translate-home{
+    width: 24%;
+    height: 83%;
+    border-radius: 5px;
+    background: var(--color-red);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: em 3em;
+    position: absolute;
+    transform: translate(54%,1.5%);
+    left: 5px;
+    z-index: 0;
+}  */
+.card-content-home {
+    background-image: url("../img/accueil/double-cote.png");
+    background-repeat: no-repeat;
+    background-position-y:10px ;
+}
+
+
+.card-content-home .info-client{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.info-client img{
+    position: relative;
+    left: 10%;
+    width: 70%;
+}
+
+.info-client p{
+    margin-top: 30px;
+    font-size: 10px;
+    position: relative;
+    right: 30px;
+}
+
+.info-client .icon{
+    position: relative;
+    left: 60px;
+    width: 35px;
+    height: 5px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+@media (max-width:1100px) {
+    .swiper-wrapper-home{
+        display: block;
+    }
+
+    .card-home{
+        margin-bottom: 10px;
+        width: 45em;
+    }
+
+    .translate-home{
+       display: none;
+    }
+
+    .info-client img{
+        width: 30%;
+    }
+}
+
+@media (max-width:930px) {
+    .card-home{
+        width: 30em;
+    }
+
+    .info-client img{
+        width: 30%;
+    }
+}
+
+@media (max-width:560px) {
+    .card-home{
+        width: 25em;
+    }
+}
+
+@media (max-width:465px) {
+    .card-home{
+        width: 15em;
+    }
+
+    .info-client img{
+        width: 40%;
+    }
+}
+
+
+
+/*Footer*/
+
+
+/* S'applique à tous les liens de notre site */
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-white);
+}
+footer a:hover{
+    color: var(--color-white);
+}
+
+/*S'appllique aux texts plan du site, liens utiles et laissez nous un msg*/
+footer h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight:bolder;
+    overflow: hidden;
+    color: var(--color-white);
+}
+
+/* S'applique aux bouton soumettre et inscrivez-vous de notre footer */
+
+/* S'applique au icones de resaux sociaux */
+footer .fa{
+    position: relative;
+    padding: 5px 7px;
+    color: var(--color-red);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 40px; 
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    transform: .8s ease-in;
+}
+
+footer .fa:hover{
+    background-color: transparent; 
+    color: var(--color-white);
+    transition: 2s;
+    transform: scale(.9);
+}
+
+/* S'applique à l'img du footer 1 */
+.first-footer img{
+    width: 35%;
+    margin: 50px 0px 50px 40%;
+}
+.first-footer .contenu{
+    margin: 2% 0 2% 0 ;
+    padding: 50px 0;
+    position: relative;
+    left: -5%;
+}
+.three-footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width:769px) {
+    .plan-site{
+        margin-left: -35px;
+        margin-top: 15px;
+    }
+    .first-footer img{
+        margin-left: 25%;
+    }
+
+    .first-footer .contenu{
+        padding: 1% 20%;
+        position: relative;
+    }
+
+}
+
+/*Page Service de notre site
+===================================== */
+
+.partenaires-meraship{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.partenaires-meraship a img{
+    width: 90%;
+}
+
+/*S'applique au bloc de fond rouge avec les logos des partenaires*/
+
+.bg-red-partenaires{
+    background-color: var(--color-red);
+    padding: 20px 5% 0 5%;
+}
+
+.bg-red-partenaires h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+@media (max-width:576px) {
+    .bg-red-partenaires{
+        display: flex;
+    }
+    .bg-red-partenaires img{
+        width: 100px;
+        margin: 0 30%;
+        display: inline-flex;
+    }
+}
+
+
+
+/*Page Tarif de notre site
+===================================== */
+
+/* Effet sur les textes basic, pro et premium */
+.text-bolder{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+
+/* Effet sur les textes basic, pro et premium */
+.text-bolder{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.swipe{
+    width: 100%;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width: 20em;
+    height: 95%;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 1rem 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1em;
+    z-index: 1;
+}
+
+.bg-gray{
+    background-color: #777373;
+}
+
+.card-tarif{
+    border-radius: 1em;
+    font-size: 1rem;
+    
+}
+
+.card-title h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+
+#slide-left, #slide-right{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    top: 40px;
+    transform: translateX(-300%);
+}
+
+#slide-right{
+    right:0%;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-btn{
+    color: #000000;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 40px ;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.card-text{
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 1.2em;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
+.card-title h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Page A propos de notre site
+===================================== */
+.apropos{
+    display: flex;
+}
+.profil-block{
+    /* flex-basis: 32%; */
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.apropos{
+    width: 100%;
+}
+.apropos img{
+    width: 100%;
+    display: block;
+}
+.profil{
+    background-color: var(--color-red);
+    height: 30%;
+    width: 94%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    overflow: hidden;
+    color: var(--color-white);
+    transition: .5s;
+}
+
+.profil:hover{
+    height: 60%;
+    background-color: rgba(255, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.profil h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+}
+@media (min-width:1350px) {
+    .apropos img{
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .profil-block{
+        /* flex-basis: 32%; */
+        left: 10px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        margin-bottom: 10%;
+    }
+
+    .apropos{
+        padding-left: 30px;
+        
+    } 
+    
+}
+
+@media (min-width:500px) and (max-width:767px) {
+    .apropos {
+        width: 60%;
+    }
+
+    .profil-block{
+        left: 100px;
+    }
+}
+
+/*Page contact de notre site
+===================================== */
+
+/*Le FAQ de notre page*/
+
+.faq{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E52109;
+    overflow: hidden;
+    padding: 0 1rem;
+    border-radius: 5px;   
+}
+
+.question h3{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-white);
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    
+}
+.answer p{
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    transition: max-height 1.4s ease; /*Doit être revu*/
+}
+
+
+/*S'applique reponses des questions du faq*/
+.faq.active .answer{
+    min-height: 250px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active i{
+    transform: rotate(180deg);
+}
+i{
+    transition: transform 0.4s ease-in;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translate(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+/* Chargement de la page */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 100;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 6px solid #dddddd;
+    border-radius: 50px;
+    border-top-color: #007FFF;
+    /* border-left-color: #007FFF; */
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,12 @@
+<svg id="Groupe_240" data-name="Groupe 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="237.124" height="55.574" viewBox="0 0 237.124 55.574">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_212" data-name="Rectangle 212" width="237.124" height="55.574" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_239" data-name="Groupe 239" clip-path="url(#clip-path)">
+    <text id="MERASHIP" transform="translate(56.23 33.24)" font-size="33" font-family="ProximaNova-Extrabld, Proxima Nova"><tspan x="0" y="0">MER</tspan><tspan y="0" letter-spacing="-0.003em">A</tspan><tspan y="0">SHIP</tspan></text>
+    <text id="Expédiez_vos_colis_en_toute_simplicité" data-name="Expédiez vos colis en toute simplicité" transform="translate(57.625 46.711)" font-size="10" font-family="ProximaNova-Light, Proxima Nova" font-weight="300"><tspan x="0" y="0">Expédiez vos colis en toute simplicité</tspan></text>
+    <path id="Tracé_1871" data-name="Tracé 1871" d="M50.581,48.033l-9.875,1.85V9.927a.457.457,0,0,0-.457-.457H31.112a.453.453,0,0,0-.426.3L25.418,23.989a.455.455,0,0,1-.853,0L19.335,9.77a.451.451,0,0,0-.426-.3H9.77a.456.456,0,0,0-.455.457V36.672a.456.456,0,0,0,.455.457h6.222a.454.454,0,0,0,.455-.457V20.989a.456.456,0,0,1,.884-.158l5.974,16a.453.453,0,0,0,.426.3h2.52a.455.455,0,0,0,.426-.3l6.015-16.017a.455.455,0,0,1,.881.16V51.219L10.5,55.542a1.845,1.845,0,0,1-2.155-1.473L.031,9.695A1.848,1.848,0,0,1,1.507,7.54L41.587.031a1.847,1.847,0,0,1,2.155,1.475l8.312,44.374a1.842,1.842,0,0,1-1.473,2.153" transform="translate(0 0)" fill="#e50a0a"/>
+  </g>
+</svg>

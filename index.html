@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Lien bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Lien font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+    <!-- Fichier css -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Lien de favicon -->
+    <link rel="icon" href="img/accueil/logo1_meraship.svg">
+
+    <!-- Multiple select -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+
+    <title>MERASHIP | ACCUEIL</title>
+</head>
+<body>
+    <section class="header">
+        <!-- Menu de navigation -->
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="img/accueil/logo1_meraship.svg" alt="">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class="fa fa-bars" id="menu-icon"></i>
+                <i class="fa fa-times" id="close-icon"></i>
+            </label>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li ><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="html/services.html" >Nos services</a></li>
+                    <li><a href="html/tarification.html">Tarification</a></li>
+                    <li><a href="html/apropos.html">A propos</a></li>
+                    <li><a href="html/contact.html">Contact</a></li>
+                    <li>
+                        <button class="btn-connexion btn">Se connecter</button>
+                        <button class="btn-inscription btn">Inscription</button>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>  
+        <!-- Fin de menu de navigation -->
+    </section>
+
+    <section class="Bienvenu">
+        
+        <div id="carouselExampleCaptions" class="carousel slide home-image" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active nav-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="nav-btn" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="nav-btn" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="img/accueil/slide1.png" class="d-block w-100" alt="">
+                  <div class="carousel-caption">
+                      <h1 class="animated bounceInRight" style="animation-delay: 1s">Bienvenu sur Méraship - Votre plateforme d'expédition de colis</h1>
+                      <p class="animated bounceInLeft"  style="animation-delay: 1s">Trouvez l'entreprise d'expédition idéale pour vos colis en un clin d'oeil</p>
+                      <a href="" class="découvrir">Découvrir</a>
+                   </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/accueil/slide22.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="animated bounceInRight" style="animation-delay: 1s">Méraship - Pour une expédition fiable et sécurisée</h1>
+                    <p class="animated bounceInLeft"  style="animation-delay: 1s">Trouvez l'entreprise d'expédition idéale pour vos colis en un clin d'oeil</p>
+                    <a href="">Découvrir</a>
+                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/accueil/slide33.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        
+        <!-- Fond noir -->
+        <div class="row bgd-dark after-slide">
+           <div class="after-slide-row">
+            <div class="row after-slide-content contenu-text mt-5">
+                
+               <div class="col-lg-4 col-md-4 col-sm-12  ">
+                  <div class="after-slide-text">
+                    <p class="border-left">Recherchez, comparez et choisissez parmis un large éventail d'entreprises d'expédition de confiance, 
+                        prêtes à transporter vos colis vers les destinations nationales et internationales.
+                    </p>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-6 col-sm-12 input-items ">
+                   <!-- Point de départ du colis -->
+                  
+                   <div class="row mt-3">
+                    <div class="col-lg-1 col-md-2 col-sm-2 accueil-icone px-5">
+                        <i class="fa fa-flag"></i>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <form action="">
+                            <select id="point-arrive" class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>Point de départ du colis</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            
+                        </form>
+                    </div>
+                </div>
+                   <!-- Point d'arrivé du colis -->
+                   <div class="row mt-3">
+                       <div class="col-lg-1 col-md-2 col-sm-2 accueil-icone px-5">
+                           <i class="fa fa-flag"></i>
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-sm-8">
+                           <form action="">
+                               <select id="point-arrive" class="form-select form-select-sm" aria-label="Small select example">
+                                   <option selected>Point d'arrivé</option>
+                                   <option value="1">One</option>
+                                   <option value="2">Two</option>
+                                   <option value="3">Three</option>
+                                 </select>
+                               
+                           </form>
+                       </div>
+                   </div>
+
+                   <!-- Horraires -->
+                   <div class="row mt-3">
+                       <div class="col-lg-1 col-md-2 col-sm-2 accueil-icone px-5">
+                           <i class="fa fa-calendar"></i>
+                       </div>
+                       <div class="col-lg-4 col-md-6 col-sm-8">
+                           <form action="">
+                               <select class="form-select form-select-sm" aria-label="Small select example">
+                                   <option selected >00/00/00</option>
+                                   <option value="1">One</option>
+                                   <option value="2">Two</option>
+                                   <option value="3">Three</option>
+                                 </select>
+                               
+                           </form>
+                       </div>
+                   </div>
+
+                   <!-- Expéditeurs -->
+                   <div class="row mt-3">
+                       <div class="col-lg-1 col-md-2 col-sm-2 accueil-icone px-5">
+                           <i class="fa fa-globe"></i>
+                       </div>
+                       <div class="col-lg-5 col-md-6 col-sm-8">
+                           <form action="">
+                               <select class="form-select form-select-sm" aria-label="Small select example">
+                                   <option selected>Point de départ du colis</option>
+                                   <option value="1">One</option>
+                                   <option value="2">Two</option>
+                                   <option value="3">Three</option>
+                                 </select>
+                               
+                           </form>
+                       </div>
+                   </div>
+               </div> 
+           </div>
+           </div>
+       </div>
+    </section>      
+
+
+    <!-- Nos clients et partenaires; leurs avis et impressions-->
+    <section class="  ">
+        <!-- section pourquoi choisir meraship ? -->
+        <section class="image-fond ">
+            <section class="contenu-text">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 list-choix">
+                        <h3 class="text-rouge col-lg-10 col-sm-12 mb-5">Pourquoi choisir Méraship ?</h3>
+                        <div class="row mb-5">
+                            <div class="all-content">
+                                <div class="content-left">
+                                    <h3>01</h3>
+                                </div>
+                                <div class="content-right">
+                                    <p><span>Large choix d'entreprises d'expéditions :</span>
+                                        Nous collaborons avec des entreprises de transport de confiance,
+                                        offrant une large gamme complète de services d'expédition.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-5">
+                            <div class="all-contents">
+                                <div class="all-content">
+                                    <div class="content-left ">
+                                        <h3>02</h3>
+                                    </div>
+                                    <div class="content-right">
+                                        <p><span>Facilité de comparaison :</span>
+                                            Evaluer les tarifs, les délais de livraisons, les avis des clients et 
+                                             les caractéristiques de chaque entreprise pour choisir celle qui vous convient le mieux.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-5">
+                            <div class="all-contents">
+                                <div class="all-content">
+                                    <div class="content-left">
+                                        <h3>03</h3>
+                                    </div>
+                                    <div class="content-right">
+                                        <p><span>En temps réel :</span>
+                                            Suivez vos colis en temps réel grâce à nos outils de suivis efficaces,
+                                            offrant une visibilité total tout au long du processus d'expédition.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row mb-5">
+                            <div class="all-contents">
+                                <div class="all-content">
+                                    <div class="content-left">
+                                        <h3>04</h3>
+                                    </div>
+                                    <div class="content-right">
+                                        <p><span>Simplicité d'utilisation : <br></span>
+                                            Notre interface convivial rend la recherche, la réservation et le suivi 
+                                            d'expéditions simples et intuitifs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12 img-content">
+                        <img class="mt-2" src="img/accueil/img1.png" alt="" width="100%">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
+        <!-- Comment ça marche -->
+        <section class="px-3">
+            <div class="row contenu-text">
+                <div class="col-lg-6 mt-5">
+                    <h3 class="text-rouge">Comment ça marche ?</h3>
+                    <div class="row list-style">
+                        <ul>
+                            <li>
+                                <p class="px-2">Trouver une entreprise d'expédition :</p>
+                            </li>
+                            <p class="px-2">Entrez les détails de votre expédition et
+                                 découvrez une listes d'entreprises adaptées à vos besoins.</p>
+                        </ul>
+                    </div>
+
+                    <div class="row list-style">
+                        <ul>
+                            <li>
+                                <p class="px-2">Comparez et choisissez :</p>
+                            </li>
+                            <p class="px-2">Analysez les options disponibles, comparez les services et les tarifs pour
+                                prendre une décision éclairée.
+                            </p>
+                        </ul>
+                    </div>
+
+                    <div class="row list-style">
+                        <ul>
+                            <li>
+                                <p class="px-2">Réservez votre expédition :</p>
+                            </li>
+                            <p class="px-2">Une fois que vous avez trouvé l'entreprise idéale,
+                                réservez votre expédition en quelques clics seulement.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-5 vidéo-content">
+                    <img src="img/accueil/vidéo.png" alt="" width="120%">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Comment devenir partenaire -->
+    <section class="partenaire">
+        <div class="row contenu-text1">
+            <div class="row ">
+                <div class="col-lg-6 col-sm-12 ">
+                    <h3>COMMENT DEVENIR PARTENAIRE MERASHIP ?</h3>
+                    <p><button class="btn btn-red" id="connexion">Devenez partenaire</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section nos partenaires -->
+    <section class=" image-fond">
+        <section class="">
+            <div class="row contenu-text1 partner ">
+                <div class="row mt-4">
+                    <h2 class="text-rouge"> Partenaires</h2>
+                </div>
+                <div class="partner-logo mt-2">
+                    <a href=""><img src="img/accueil/meraky-tech.png" alt=""></a>
+                    <a href=""><img src="img/accueil/meraky.png" alt=""></a>
+                    <a href=""><img src="img/accueil/sodif.png" alt=""></a>
+                    <a href=""><img src="img/accueil/maya.png" alt=""></a>
+                    <a href=""><img src="img/accueil/meraskul.png" alt=""></a>
+        
+                    <a href=""><img src="img/accueil/meraky-tech.png" alt=""></a>
+                    <a href=""><img src="img/accueil/meraky.png" alt=""></a>
+                    <a href=""><img src="img/accueil/sodif.png" alt=""></a>
+                    <a href=""><img src="img/accueil/maya.png" alt=""></a>
+                    <a href=""><img src="img/accueil/meraskul.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- Fins de la Section nos partenaires -->
+
+        <section class="contenu-text1 mt-5 mb-5">
+            <div class="row">
+                <h1 class="px-5 col-12 text-black">Ce qu'ils pensent de meraship</h1>
+            </div>
+        </section>
+    
+        <section class="swiper-home contenu-text ms-5">
+            <div class="swiper-wrapper-home">
+                <div class=" card-home bgd-dark">
+                    <div class="card-content-home">
+                            <p class="avis-client">
+                                «Je cherchais une entreprise d'expédition pour livrer mes colis à l'international, et Meraship à 
+                                été la solution parfaite ! Grâce à leur plateforme conviviale, j'ai pu comparer les tarifs de plusiuers 
+                                entreprise et choisir celle qui offait le meilleur service. Mes colis ont été livrés à temps et le suivis
+                                en temps réel m'as permis de rester informé à chaque étape du processus. Je recommande vivement Méraship
+                                à tous ceux qui cherche une solution d'expédition efficace et transparente.»
+                            </p>
+                        <div class="info-client row">
+                            <div class="col-6">
+                                <img src="img/accueil/client1.png" alt="" width="70%">
+                            </div>
+                            <div class="col-6">
+                                <p class=""> M. Kouamé Ange-Julien <br>
+                                DG de Sodif Shipping</p>
+                                <div class="icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" card-home bgd-dark">
+                    <div class="card-content-home">
+                        <p class="avis-client">
+                            «En temps qu'entreprise d'expédition nous avons rejoint Meraship il y a quelques mois, et nous avons été impressionné par
+                            leur professionnalisme et leur engagement envers la qualité de service. Grâce à leur plateforme nous avons pu atteindre de nouuveau clients
+                            et élargir notre réseau d'affaire. Méraship nous à fournit une visibilité accrue, et leur système de suivis en temps réel nous à permis de 
+                            fournir un service de suivis de colis transparent et fiable à nos client. Nous sommes ravis d'être partenaire de Meraship »
+                        </p>
+                        <div class="info-client row">
+                            <div class="col-6">
+                                <img src="img/accueil/client1.png" alt="" width="70%">
+                            </div>
+                            <div class="col-6">
+                                <p class=""> Sodif Shipping</p>
+                                <div class="icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" card-home bgd-dark">
+                    <div class="card-content-home">
+                            <p class="avis-client">
+                                «Je suis très satisfait de l'expérience que j'ai eu avec Meraship. J'ai utilisé leur plateforme pour expédier plusieurs colis à différentes 
+                                destinations, et j'ai teouver le processus très simple et rapide. Les entreprises d'expédition que j'ai utilisé étaient 
+                                professionnelles et ont livrés mes colis dans les délais prévus. Le suivis en temps réel était très pratique et j'ai pu suivre 
+                                chaque étapes de mes expéditions. Je continuerais à utiliser Méraship pour mes besoins d'expéditions à l'avenir.
+                            </p>
+                        <div class="info-client row">
+                            <div class="col-6">
+                                <img src="img/accueil/client2.png" alt="" width="70%">
+                            </div>
+                            <div class="col-6">
+                                <p class=""> Natacha Kanga <br>
+                                DG de Maya</p>
+                                <div class="icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </section>
+
+    <!--Partie 7:  Notre pied de page -->
+    <footer class="footer" >
+        <!-- Premier footer -->
+        <div class="row first-footer bg-gris">
+            <div class="col-lg-6 col-md-6">
+                <img src="img/accueil/footer.png" alt="">
+            </div>
+            <div class="col-lg-4 col-md-5 contenu">
+                <p class="">Rejoignez-nous dès aujourd-hui et découvrez une nouvelle manière simple et efficace de gérer vos expéditions de colis !</p>
+                <p><button class="btn btn-red" >Inscrivez vous</button></p>
+            </div>
+        </div>
+
+        <!-- Deuxième footer -->
+        <div class="row bg-red ">
+            <div class="contenu-text row">
+                <!-- Première colonne -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 text-white">
+                    <div class="row">
+                        <div class="">
+                            <a href="index.html">
+                                <img src="img/accueil/logo2_meraship.svg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="mt-5">
+                            <p>INSCRIVEZ-VOUS <br>A NOTRE NEWSLETTER</p>
+                        </div>
+                        <div class="row">
+                            <form action="">
+                                <input class="form-control form-group" type="text" placeholder="Entrez votre email">
+                                <button class="btn mt-2 btn-black ">SOUMETTRE</button>
+                            </form>
+                        </div>
+                        <div class="row mt-3">
+                            <div>
+                                <h6>SUIVEZ NOUS  
+                                    <a href=""><i class="fa social-icon fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa social-icon fa-brands fa-linkedin"></i></a>
+                                    <a href=""><i class=" fa social-icon fa-brands fa-instagram"></i></a>
+                                    </br>
+                                    CONTACTEZ-NOUS</br>
+                                    <h5>(+225) 2722279405</h5>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deuxième colonne -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 px-5 text-white plan-site">
+                    <div class="row">
+                        <h2>Plan du site</h2>
+                        <p>Toutes nos pages</p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <a href="index.html">Accueil</a> <br> 
+                            <a href="html/services.html">Nos services</a> <br> 
+                            <a href="html/tarification.html">Tarification</a> <br>
+                            <a href="html/apropos.html">A propos</a> <br>
+                            <a href="html/contact.html">Contacts</a> <br> 
+                            <a href="">Devenez Partenaire </a>
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <!-- Troisième colonne -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="row">
+                        <h2>Liens Utiles</h2>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <p><a href="">Politiques de confidentialités</a> <br>
+                            <a href="">Conditions générales d'utilisations</a> <br> 
+                            <a href="">Mention légales</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cinquième colonne -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="row">
+                        <h2>Laissez nous un message</h2>
+                    </div>
+                    <div class="row">
+                        <form action="">
+                            <input type="text" placeholder="Votre nom" class="form-control form-group">
+                            <input type="text" placeholder="Votre nom" class="form-control form-group mt-2">
+                            <textarea name="" id="" cols="30" rows="4" placeholder="Entrez votre message" class="form-control form-group mt-2"></textarea>
+                            <button class="btn mt-3 btn-black">Inscrivez-vous</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="top-down">
+                    <a href=""><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Troisième footer -->
+        <div class="row three-footer">
+            <div class="col-12">
+                <p> &copy;Meraship. Tous droit réservés &copy;2023. Un produit de MERAKY</p>
+            </div>
+        </div>
+
+        <div class="loader"></div>
+    </footer>
+
+    <!-- Multiple select js -->
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/app.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
+
+</body>
+</html>

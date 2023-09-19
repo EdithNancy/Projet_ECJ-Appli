@@ -1,0 +1,13 @@
+<svg id="Groupe_5" data-name="Groupe 5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="192.963" height="59.603" viewBox="0 0 192.963 59.603">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="192.963" height="59.603" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_4" data-name="Groupe 4" clip-path="url(#clip-path)">
+    <path id="Tracé_21" data-name="Tracé 21" d="M0,143.4H0a13.9,13.9,0,1,1,27.791,0v21.038H21.038A21.038,21.038,0,0,1,0,143.4" transform="translate(0 -109.4)" fill="#fff"/>
+    <path id="Tracé_22" data-name="Tracé 22" d="M216.262,143.426h0a13.9,13.9,0,0,0-13.9-13.9h0a13.9,13.9,0,0,0-13.9,13.9v21.038h6.753a21.038,21.038,0,0,0,21.038-21.038" transform="translate(-159.217 -109.425)" fill="#fff"/>
+    <path id="Tracé_23" data-name="Tracé 23" d="M130.239,19.668a9.834,9.834,0,1,1,9.834-9.834,9.834,9.834,0,0,1-9.834,9.834" transform="translate(-101.716 0)" fill="#fff"/>
+    <text id="Meraskul" transform="translate(65.09 44.756)" fill="#fff" font-size="28" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">Meraskul</tspan></text>
+  </g>
+</svg>
